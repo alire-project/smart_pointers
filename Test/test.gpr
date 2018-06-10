@@ -1,0 +1,48 @@
+-- ---------------------------------------------------------------------
+-- This software is provided as is in the hope that it might be found
+-- useful.
+-- You may use and modify it freely provided you keep this copyright
+-- notice unchanged and mark modifications appropriately.
+--
+-- Bug reports and proposals for improvements are welcome. Please send
+-- them to the eMail address below.
+--
+-- Christoph Karl Walter Grein
+-- Hauptstr. 42
+-- D-86926 Greifenberg
+-- Germany
+--
+-- eMail:    Christ-Usch.Grein@T-Online.de
+-- Internet: http://www.christ-usch-grein.homepage.t-online.de/
+--
+-- Copyright (c) 2011, 2012, 2016 Christoph Karl Walter Grein
+-- ---------------------------------------------------------------------
+
+with "../smart_pointers";
+
+project Test is
+
+  --====================================================================
+  -- Author    Christoph Grein
+  -- Version   2.0
+  -- Date      15 May 2016
+  --====================================================================
+  --
+  --====================================================================
+  -- History
+  -- Author Version   Date    Reason for change
+  --  C.G.    2.0  15.05.2016 Tests rewrought
+  --  C.G.    1.2  28.06.2012 test_indefinite_record_pointers added
+  --  C.G.    1.1  15.09.2011 dispatching_test added
+  --  C.G.    1.0  17.06.2011
+  --====================================================================
+
+  for Source_Dirs use (".");
+  for Object_Dir  use "GnatLib";
+  for Exec_Dir    use ".";
+
+  for Main use ("run_all");
+
+  package Compiler renames Smart_Pointers.Compiler;
+
+end Test;
